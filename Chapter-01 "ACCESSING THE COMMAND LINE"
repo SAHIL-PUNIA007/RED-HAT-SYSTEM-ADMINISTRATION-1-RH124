@@ -1,0 +1,25 @@
+▶ OBJECTIVES
+After completing this section, you should be able to log in to a Linux system and run simple commands using the shell.
+
+▶ INTRODUCTION TO THE BASH SHELL
+A command line is a text-based interface which can be used to input instructions to a computer system. The Linux command line is provided by a program called the shell.
+The default shell for users in Red Hat Enterprise Linux is the GNU Bourne-Again Shell (bash). Bash is an improved version of one of the most successful shells used on UNIX-like systems, the Bourne
+Shell (sh).
+
+When a shell is used interactively, it displays a string when it is waiting for a command from the user. This is called the shell prompt. When a regular user starts a shell, the default prompt ends
+with a $ character and the $ character is replaced by a # character if the shell is running as the superuser, root.
+[user@host ~]$     << Shell Prompt when a regular user start the shell
+[root@host ~]#     << Shell Prompt when a Superuser {root} start the shell
+
+▶ SHELL BASICS
+Commands entered at the shell prompt have three basic parts:
+• Command to run
+• Options to adjust the behavior of the command
+• Arguments, which are typically targets of the command
+
+The command is the name of the program to run. It may be followed by one or more options, which adjust the behavior of the command or what it will do. 
+Options normally start with one or two dashes (-a or --all, for example) to distinguish them from arguments. 
+Commands may also be followed by one or more arguments, which often indicate a target that the command should operate upon.
+
+For example, the command usermod -L user01 has a command (usermod), an option (-L), and an argument (user01). 
+The effect of this command is to lock the password of the user01 user account.
